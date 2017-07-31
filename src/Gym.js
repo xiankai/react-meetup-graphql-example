@@ -1,11 +1,13 @@
 // @flow
 import React from 'react';
 
+type GymType = {
+    raidBoss: ?RaidBoss
+}
+
 const Gym = ({
     raidBoss,
-}: {
-    raidBoss: ?RaidBoss
-}) => (
+}: GymType) => (
     <div>
         <div style={{ fontSize: 100 }}>{ raidBoss.name }</div>
         <div style={{ fontSize: 50 }}>
