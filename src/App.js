@@ -7,7 +7,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <GymContainer eligibleRaidBosses={[{ name: 'Tyranitar', type: ['Rock', 'Flying'] }]} />
+        <GymContainer eligibleRaidBosses={[{ name: 'Tyranitar', type: ['Rock', 'Dark'] }]} />
       </div>
     );
   }

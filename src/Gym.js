@@ -1,4 +1,6 @@
 // @flow
+import type { Slideshow } from './Gym';
+
 import React from 'react';
 
 type GymType = {
@@ -7,7 +9,7 @@ type GymType = {
 
 const Gym = ({
     raidBoss,
-}: GymType) => (
+}: GymType) => raidBoss ? (
     <div>
         <div style={{ fontSize: 100 }}>{ raidBoss.name }</div>
         <div style={{ fontSize: 50 }}>
@@ -21,6 +23,6 @@ const Gym = ({
             }
         </div>
     </div>
-);
+) : null;
 
 export default Gym;
